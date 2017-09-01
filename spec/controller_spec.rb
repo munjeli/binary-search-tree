@@ -10,6 +10,8 @@ describe Controller do
     expect(controller.root).to be_a(Node)
   end
 
+  # I'm sure there's a better way to organize this
+  # without the redundant insert but this works
   it 'can insert a node' do
     controller.insert('gherkin', 17)
     expect(controller.root.left.name).to eq('gherkin')
