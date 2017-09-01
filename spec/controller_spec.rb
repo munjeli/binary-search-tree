@@ -3,8 +3,8 @@ require 'controller'
 require 'node'
 
 describe Controller do
-  let(:node) {Node.new('pickles', 18)}
-  let(:controller) {Controller.new(node)}
+  let(:node) { Node.new('pickles', 18) }
+  let(:controller) { Controller.new(node) }
 
   it 'has a root' do
     expect(controller.root).to be_a(Node)

@@ -52,6 +52,6 @@ class Controller
     order_nodes do |node|
       names = names + node.name + "\s"
     end
-    return names
+    names
   end
 end
