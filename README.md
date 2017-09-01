@@ -17,9 +17,9 @@ For dependency management, this project uses [bundler](http://bundler.io). You c
 
 The easiest way to explore Ruby classes on the command line is with a REPL, like irb or the wonderful [pry](http://pryrepl.org/) which can be installed as a gem. Start irb in a terminal:
 
-    ```ruby
-    irb
-    ```
+```ruby
+irb
+```
 
 Then require the Node and Controller classes:
 
