@@ -11,8 +11,12 @@ describe Controller do
   end
 
   it 'can insert a node' do
-    expect(controller.insert('gherkin', 17)).to be_a(Node)
-    expect(controller.root.left.name).to eq('gherkin')  
+    controller.insert('gherkin', 17)
+    expect(controller.root.left.name).to eq('gherkin')
   end
-  it 'can print ordered names'
+
+  it 'can print ordered names' do
+    controller.insert('gherkin', 17)
+    expect(controller.print_ordered_names).to eq('gherkin pickles ')
+  end
 end

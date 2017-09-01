@@ -46,9 +46,12 @@ class Controller
     order_nodes(node.right, &block)
   end
 
-  def print_ordered_nodes
+  # as per the requirements this returns a string
+  def print_ordered_names
+    names = ''
     order_nodes do |node|
-      puts node.weight
+      names = names + node.name + "\s"
     end
+    return names
   end
 end
