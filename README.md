@@ -9,27 +9,28 @@ To run the code you'll need Ruby version 2.3.0\. A environment manager is highly
 
 After installing Ruby, `git clone` this repository or download the zip package and extract the project.
 
-For dependency management, this project uses [bundler](http://bundler.io). You can install it as a gem with `gem install bundler`. `cd` into the project folder and run `bundle` to download and install the required dependencies.
+For dependency management, this project uses [bundler](http://bundler.io). You can install it as a gem with `gem install bundler`.
+`cd` into the project folder and run `bundle` to download and install the required dependencies.
 
 # API Reference
 
 The easiest way to explore Ruby classes on the command line is with a REPL, like irb or the wonderful [pry](http://pryrepl.org/) which can be installed as a gem. Start irb in a terminal:
-`irb`
+    `irb`
 Then require the Node and Controller classes:
-`require_relative "/home/$USER/binary-search-tree/lib/controller"`
+    `require_relative "/home/$USER/binary-search-tree/lib/controller"`
 ...if the binary-search-tree project is in your home directory. You don't need to require Node as it is already required by the Controller.
 
 Make a new Node, and use it to create a Controller:
-`root_node = Node.new('pickles', 17)`
-`controller = Controller.new(root_node)`
+    `root_node = Node.new('pickles', 17)`
+    `controller = Controller.new(root_node)`
 In this example, we create a controller with a root node named `pickles` with a weight of `17`.  
 
 Once you have a controller, you can insert new nodes with name and weight arguments:
-`controller.insert('gherkin', 16)`
+    `controller.insert('gherkin', 16)`
 Now we've made a left node for the tree. Insert some more nodes and you'll see the tree grow in irb.
 
 The print_ordered_names method will return the names of the nodes in the tree sorted by weight from least to greatest in a space delimited string:
-`controller.print_ordered_names`
+    `controller.print_ordered_names`
 will return `"gherkin pickles "`
 
 # Tests
