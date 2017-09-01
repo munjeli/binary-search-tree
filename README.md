@@ -1,4 +1,7 @@
 # Binary Search Tree
+[![Build Status][travis-badge]][travis]
+[travis-badge]: https://travis-ci.org/munjeli/binary-search-tree.svg?branch=master
+[travis]: https://travis-ci.org/munjeli/binary-search-tree
 
 This is a simple implmentation of a network topology modelled by a binary search tree where nodes represent physical nodes and a Controller manages the nodes from the root. No two nodes can have the same name or weight. Names are strings and weights are integers.
 
