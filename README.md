@@ -23,34 +23,34 @@ irb
 
 Then require the Node and Controller classes:
 
-    ```ruby
-    require_relative "/home/$USER/binary-search-tree/lib/controller"
-    ```
+```ruby
+require_relative "/home/$USER/binary-search-tree/lib/controller"
+```
 
 ...if the binary-search-tree project is in your home directory. You don't need to require Node as it is already required by the Controller.
 
 Make a new Node, and use it to create a Controller:
 
-    ```ruby
-    root_node = Node.new('pickles', 17)
-    controller = Controller.new(root_node)
-    ```
+```ruby
+root_node = Node.new('pickles', 17)
+controller = Controller.new(root_node)
+```
 
 In this example, we create a controller with a root node named `pickles` with a weight of `17`.  
 
 Once you have a controller, you can insert new nodes with name and weight arguments:
 
-    ```ruby
-    controller.insert('gherkin', 16)
-    ```
+```ruby
+controller.insert('gherkin', 16)
+```
 
 Now we've made a left node for the tree. Insert some more nodes and you'll see the tree grow in irb.
 
 The print_ordered_names method will return the names of the nodes in the tree sorted by weight from least to greatest in a space delimited string:
 
-    ```ruby
-    controller.print_ordered_names
-    ```
+```ruby
+controller.print_ordered_names
+```
 
 will return `"gherkin pickles "`
 
